@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8CC17E62-A912-453D-8659-47B8B6F0BBFD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ALNS_TSP</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ADestroyOperator.h" />
+    <ClInclude Include="src\ALNS.h" />
+    <ClInclude Include="src\ALNSParametersoptimizable.h" />
+    <ClInclude Include="src\ALNS_inc.h" />
+    <ClInclude Include="src\ALNS_Iteration_Status.h" />
+    <ClInclude Include="src\ALNS_Parameters.h" />
+    <ClInclude Include="src\AOperator.h" />
+    <ClInclude Include="src\AOperatorManager.h" />
+    <ClInclude Include="src\ARepairOperator.h" />
+    <ClInclude Include="src\CoolingScheduleFactory.h" />
+    <ClInclude Include="src\CoolingScheduleParametersOptimizable.h" />
+    <ClInclude Include="src\CoolingSchedule_Parameters.h" />
+    <ClInclude Include="src\DummyAcceptanceModule.h" />
+    <ClInclude Include="src\ExponentialCoolingSchedule.h" />
+    <ClInclude Include="src\IAcceptanceModule.h" />
+    <ClInclude Include="src\IBestSolutionManager.h" />
+    <ClInclude Include="src\ICoolingSchedule.h" />
+    <ClInclude Include="src\ILocalSearch.h" />
+    <ClInclude Include="src\ILocalSearchManager.h" />
+    <ClInclude Include="src\ISolution.h" />
+    <ClInclude Include="src\ISolverBuilder.h" />
+    <ClInclude Include="src\IUpdatable.h" />
+    <ClInclude Include="src\LinearCoolingSchedule.h" />
+    <ClInclude Include="src\MixLinearCoolingSchedule.h" />
+    <ClInclude Include="src\OperatorManager.h" />
+    <ClInclude Include="src\ParameterTuning.h" />
+    <ClInclude Include="src\SimpleBestSolutionManager.h" />
+    <ClInclude Include="src\SimpleLocalSearchManager.h" />
+    <ClInclude Include="src\SimulatedAnnealing.h" />
+    <ClInclude Include="src\Statistics.h" />
+    <ClInclude Include="src\TimeLinearCoolingSchedule.h" />
+    <ClInclude Include="src\tinystr.h" />
+    <ClInclude Include="src\tinyxml.h" />
+    <ClInclude Include="src\TSPSolution.h" />
+    <ClInclude Include="src\TSP_Best_Insert.h" />
+    <ClInclude Include="src\TSP_History_Removal.h" />
+    <ClInclude Include="src\TSP_LS.h" />
+    <ClInclude Include="src\TSP_Random_Insert.h" />
+    <ClInclude Include="src\TSP_Random_Removal.h" />
+    <ClInclude Include="src\TSP_Worst_Removal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ALNS.cpp" />
+    <ClCompile Include="src\ALNSParametersoptimizable.cpp" />
+    <ClCompile Include="src\ALNS_Parameters.cpp" />
+    <ClCompile Include="src\CoolingScheduleFactory.cpp" />
+    <ClCompile Include="src\CoolingScheduleParametersOptimizable.cpp" />
+    <ClCompile Include="src\CoolingSchedule_Parameters.cpp" />
+    <ClCompile Include="src\DummyAcceptanceModule.cpp" />
+    <ClCompile Include="src\ExponentialCoolingSchedule.cpp" />
+    <ClCompile Include="src\LinearCoolingSchedule.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MixLinearCoolingSchedule.cpp" />
+    <ClCompile Include="src\OperatorManager.cpp" />
+    <ClCompile Include="src\ParameterTuning.cpp" />
+    <ClCompile Include="src\SimpleBestSolutionManager.cpp" />
+    <ClCompile Include="src\SimpleLocalSearchManager.cpp" />
+    <ClCompile Include="src\SimulatedAnnealing.cpp" />
+    <ClCompile Include="src\Statistics.cpp" />
+    <ClCompile Include="src\TimeLinearCoolingSchedule.cpp" />
+    <ClCompile Include="src\tinystr.cpp" />
+    <ClCompile Include="src\tinyxml.cpp" />
+    <ClCompile Include="src\tinyxmlerror.cpp" />
+    <ClCompile Include="src\tinyxmlparser.cpp" />
+    <ClCompile Include="src\TSPSolution.cpp" />
+    <ClCompile Include="src\TSP_Best_Insert.cpp" />
+    <ClCompile Include="src\TSP_History_Removal.cpp" />
+    <ClCompile Include="src\TSP_LS.cpp" />
+    <ClCompile Include="src\TSP_Random_Insert.cpp" />
+    <ClCompile Include="src\TSP_Random_Removal.cpp" />
+    <ClCompile Include="src\TSP_Worst_Removal.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
